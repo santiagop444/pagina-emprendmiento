@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="calculadora.html">Nómina</a>
+            <a href="acerca.html">Equipo</a>
+            <a href="contacto.html">Soporte</a>
+        </nav>
+    </header>
+
+    <main class="contacto-container" style="display:flex; flex-direction:column; align-items:center; gap:25px; padding:40px; max-width:700px; margin:auto; text-align:center;">
+
+        <div class="placeholder-img">Imagen</div>
+
+        <h2>¿Necesitas asistencia?</h2>
+
+        <p>
+            Estamos aquí para ayudarte con cualquier inconveniente, duda técnica o sugerencia
+            relacionada con la plataforma. Nuestro equipo revisa cada mensaje manualmente
+            para garantizar una respuesta adecuada.
+        </p>
+
+        <form class="contacto-form" style="width:100%; display:flex; flex-direction:column; gap:15px;">
+            <div>
+                <label for="nombreC">Tu nombre</label>
+                <input type="text" id="nombreC" required>
+            </div>
+
+            <div>
+                <label for="correo">Correo de contacto</label>
+                <input type="email" id="correo" required>
+            </div>
+
+            <div>
+                <label for="mensaje">Cuéntanos qué ocurre</label>
+                <textarea id="mensaje" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
